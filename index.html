@@ -4,63 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perro</title>
-    <head>
-        <link rel="stylesheet" href="styles.css">
-      </head>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .contenedor2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .texto-alineado2 {
+            text-align: left;
+            font-size: 18px;
+            line-height: 1.5;
+            width: 50%;
+        }
+
+        .texto-alineado2 p strong {
+            color: blue; /* Color azul igual al de "Descripción" */
+        }
+
+        .imagen {
+            width: 600px; /* Imagen más grande */
+            height: auto;
+            border-radius: 10px;
+            margin-left: 30px; /* Espacio entre texto e imagen */
+        }
+
+        .button-container {
+            margin: 20px 0;
+        }
+
+        #extra-info {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
+
+    <div class="button-container">
+        <button id="toggle-theme">Cambiar Tema</button>
+        <p id="info" style="cursor: pointer; font-weight: bold;">Haz clic para ver más información.</p>
+    </div>
+
+    <div id="extra-info">
+        <p>        Los Husky no ladran, aúllann
+            Esta variedad tuvo pocos cruces con otras razas, al estar aislada en una zona concreta durante siglos. Por este motivo, sus genes y los del lobo mantienen cierta cercanía. Esto no significa que sean agresivos, pues al desarrollarse junto al hombre se acostumbraron a la vida doméstica. Sin embargo, mantuvieron esta característica tan lobuna. De hecho, su aullido puede escucharse a 15 kilómetros de distancia.
+            </p>
+    </div>
+
     <div class="contenedor2">
         <div class="texto-alineado2">
-            <p class="text-start1">Nombre: </p>
-            <p class="text-start11">Perro </p>
-            <p class="text-start2">Nombre científico: </p>
-            <p class="text-start22">Canis lupus familiaris </p>
-            <p class="text-start3">Clase: </p>
-            <p class="text-start33">Mamífero </p>
-            <p class="text-start4">Vida media en libertad: </p>
-            <p class="text-start44">10 a 13 años </p>
-            <p class="text-start5">Tamaño: </p>
-            <p class="text-start55">Varían según la raza </p>
-            <p class="text-start6">Peso: </p>
-            <p class="text-start66">Varían según la raza </p>
-            </div>
+            <p><strong>Nombre:</strong> Perro</p>
+            <p><strong>Nombre científico:</strong> Canis lupus familiaris</p>
+            <p><strong>Clase:</strong> Mamífero</p>
+            <p><strong>Vida media en libertad:</strong> 10 a 13 años</p>
+            <p><strong>Tamaño:</strong> Varían según la raza</p>
+            <p><strong>Peso:</strong> Varían según la raza</p>
+        </div>
+        <img src="img/hus.jpg" alt="Perro Husky" class="imagen">
     </div>
-
-
-<body style="background-color: white; color: black; text-align: center; font-family: Arial, sans-serif;">
-
-    <button id="toggle-theme">Cambiar Tema</button>
-    <p id="info" style="cursor: pointer; font-weight: bold;">Haz clic para ver más información.</p>
-    
-    <div id="extra-info" style="display: none; opacity: 0; transition: opacity 0.5s ease-in-out; font-size: 18px; margin-top: 10px;">
-        Los Husky no ladran, aúllann
-Esta variedad tuvo pocos cruces con otras razas, al estar aislada en una zona concreta durante siglos. Por este motivo, sus genes y los del lobo mantienen cierta cercanía. Esto no significa que sean agresivos, pues al desarrollarse junto al hombre se acostumbraron a la vida doméstica. Sin embargo, mantuvieron esta característica tan lobuna. De hecho, su aullido puede escucharse a 15 kilómetros de distancia.
-    </div>
-
-    <img src="img/hus.jpg" class="img-thumbnal" 
-    alt="Perro Husky de Siberia, uno de los perros más hermosos del mundo" 
-    style="max-width: 100%; height: auto; margin-top: 20px; border-radius: 10px; float: right;">
 
 
     <script src="script.js"></script> 
-
-
-    <p class="text-start7">Descripción: </p>
-    <p class="text-start">El perro doméstico, Canis lupus familiaris, es un mamífero carnívoro domesticado hace miles de años, descendiente del lobo gris. Se caracteriza por su gran diversidad de razas, tamaños y temperamentos, adaptándose a diversos roles como compañía, trabajo y asistencia. Son animales sociales, leales e inteligentes, con un agudo sentido del olfato y el oído. Su esperanza de vida varía según la raza y cuidados, oscilando entre 10 y 13 años en promedio. </p>
-    <div class="contenedor">
-            <img src="img/perrodefensa.jpg" class="rounded float-start" alt="">
-             <div class="texto-alineado"></div>
-                <p class="text-start10">Características principales del perro: </p>
-                <p class="text-start12">1. Diversidad de razas </p>
-                <p class="text-start13">2. Son omnívoros </p>
-                <p class="text-start14">3. Son animales sociales que forman fuertes vínculos con sus dueños y otros perros. </p>
-                <p class="text-start15">4. Sentidos agudos </p>
-                <p class="text-start16">5. Inteligencia y sociabilidad </p>
-                <p class="text-start17">6. Adaptabilidad </p>
-                <p class="text-start18">7. Se comunican a través de ladridos, gruñidos, gestos y lenguaje corporal </p>
-                <p class="text-start19">8. Conservan instintos de sus ancestros lobos, como el de caza y el de manada. </p>
-            </div>
+    <div style="text-align: center; font-size: 18px; line-height: 1.5; margin-bottom: 20px;">
+        <p style="font-weight: bold;">Descripción:</p>
+        <p>El perro doméstico, <i>Canis lupus familiaris</i>, es un mamífero carnívoro domesticado hace miles de años, descendiente del lobo gris. Se caracteriza por su gran diversidad de razas, tamaños y temperamentos, adaptándose a diversos roles como compañía, trabajo y asistencia. Son animales sociales, leales e inteligentes, con un agudo sentido del olfato y el oído. Su esperanza de vida varía según la raza y cuidados, oscilando entre 10 y 13 años en promedio.</p>
     </div>
+    
+    <div style="display: flex; align-items: center; justify-content: space-between;">
+        <img src="img/perrodefensa.jpg" class="rounded" alt="Perro" style="width: 800px; height: auto; border-radius: 10px; margin-left: 20px;">
+        
+        <div style="font-size: 18px; line-height: 1.5; text-align: left; width: 50%;">
+            <p style="color: blue; font-weight: bold;">Características principales del perro:</p>
+            <p><span style="color: blue; font-weight: bold;">1.</span> Diversidad de razas</p>
+            <p><span style="color: blue; font-weight: bold;">2.</span> Son omnívoros</p>
+            <p><span style="color: blue; font-weight: bold;">3.</span> Son animales sociales que forman fuertes vínculos con sus dueños y otros perros.</p>
+            <p><span style="color: blue; font-weight: bold;">4.</span> Sentidos agudos</p>
+            <p><span style="color: blue; font-weight: bold;">5.</span> Inteligencia y sociabilidad</p>
+            <p><span style="color: blue; font-weight: bold;">6.</span> Adaptabilidad</p>
+            <p><span style="color: blue; font-weight: bold;">7.</span> Se comunican a través de ladridos, gruñidos, gestos y lenguaje corporal.</p>
+            <p><span style="color: blue; font-weight: bold;">8.</span> Conservan instintos de sus ancestros lobos, como el de caza y el de manada.</p>
+        </div>
+    </div>
+    
     <p class="text-start8">Fuentes: </p>
     <p class="text-body-secondary">
         <a href="https://humanidades.com/perro/" class="text-reset">Ingresa al link</a>.
