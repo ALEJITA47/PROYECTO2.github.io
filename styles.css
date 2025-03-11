@@ -1,9 +1,22 @@
 body {
 
+    .contenedor {
+        display: flex; /* Habilita Flexbox */
+        align-items: center; /* Alinea verticalmente los elementos */
+      }
+      .imagen-alineada {
+        max-width: 200px; /* Ajusta el tamaño de la imagen */
+        margin-right: 20px; /* Espacio entre la imagen y el texto */
+    }
+    .texto-alineado {
+        display: flex; /* Habilita Flexbox para los elementos de texto */
+        flex-direction: column; /* Organiza los elementos de texto en columna */
+    }
     
     .text-start1 {
         color: blue;
         font-weight: bold; 
+        
       }
      
             
@@ -72,8 +85,8 @@ body {
         text-align: right;
       }
       .rounded float-start {
-        width: 1000px;
-        height: auto;
+        max-width: 200px;
+        margin-right: 20px;
     }
     }
 
