@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perro</title>
-    <link rel="stylesheet" href="styles.css"> 
 </head>
-<body>
+<body style="background-color: white; color: black; text-align: center; font-family: Arial, sans-serif;">
 
     <button id="toggle-theme">Cambiar Tema</button>
-    <p id="info">Haz clic para ver más información.</p>
-    <div id="extra-info" style="display: none;">
+    <p id="info" style="cursor: pointer; font-weight: bold;">Haz clic para ver más información.</p>
+    
+    <div id="extra-info" style="display: none; opacity: 0; transition: opacity 0.5s ease-in-out; font-size: 18px; margin-top: 10px;">
         Esta es la información extra que aparece al hacer clic.
     </div>
 
-    <img src="img/hus.jpg" class="img-thumbnail" alt="Perro Husky de Siberia, uno de los perros más hermosos del mundo">
+    <img src="img/hus.jpg" class="img-thumbnail" alt="Perro Husky de Siberia, uno de los perros más hermosos del mundo" style="max-width: 100%; height: auto; margin-top: 20px; border-radius: 10px;">
 
     <script src="script.js"></script> 
 </body>

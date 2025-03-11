@@ -3,16 +3,33 @@ const toggleThemeBtn = document.getElementById("toggle-theme");
 const infoText = document.getElementById("info");
 const extraInfo = document.getElementById("extra-info");
 
+// Establecer un estado inicial para el tema
+let isDarkMode = false;
+
 // Función para cambiar el tema (modo claro/oscuro)
 toggleThemeBtn.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
+    isDarkMode = !isDarkMode;
+    
+    if (isDarkMode) {
+        document.body.style.backgroundColor = "black";
+        document.body.style.color = "white";
+    } else {
+        document.body.style.backgroundColor = "white";
+        document.body.style.color = "black";
+    }
 });
 
-// Función para mostrar información extra con animación al hacer clic
+// Función para mostrar información extra con animación
 infoText.addEventListener("click", () => {
-    if (extraInfo.style.maxHeight) {
-        extraInfo.style.maxHeight = null; // Ocultar con animación
+    if (extraInfo.style.display === "none" || extraInfo.style.display === "") {
+        extraInfo.style.display = "block";  // Mostrar el div
+        setTimeout(() => {
+            extraInfo.style.opacity = "1";  // Hacerlo visible con transición suave
+        }, 10);
     } else {
-        extraInfo.style.maxHeight = extraInfo.scrollHeight + "px"; // Mostrar con animación
+        extraInfo.style.opacity = "0";  // Desvanecerlo
+        setTimeout(() => {
+            extraInfo.style.display = "none";  // Ocultarlo después de la animación
+        }, 500);
     }
 });
