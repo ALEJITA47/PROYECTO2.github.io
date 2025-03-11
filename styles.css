@@ -1,9 +1,22 @@
 body {
 
+    .contenedor {
+        display: flex; 
+        align-items: center; 
+      }
+      .imagen-alineada {
+        max-width: 200px; 
+        margin-right: 20px; 
+    }
+    .texto-alineado {
+        display: flex; 
+        flex-direction: column; 
+    }
     
     .text-start1 {
         color: blue;
         font-weight: bold; 
+        
       }
      
             
@@ -72,9 +85,10 @@ body {
         text-align: right;
       }
       .rounded float-start {
-        width: 1000px;
-        height: auto;
+        max-width: 200px;
+        margin-right: 20px;
     }
     }
+
 
 
