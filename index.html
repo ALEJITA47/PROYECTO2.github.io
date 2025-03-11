@@ -3,134 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Información sobre los perros</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 0;
-            background-color: white;
-            color: black;
-        }
-
-        .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 2px solid gray;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-
-        .info {
-            flex: 1;
-        }
-
-        .info h2, .info p {
-            margin: 5px 0;
-        }
-
-        .image {
-            flex: 1;
-            text-align: right;
-        }
-
-        .image img {
-            max-width: 250px;
-            height: auto;
-            border-radius: 10px;
-        }
-
-        .description {
-            text-align: justify;
-        }
-
-        .button-container {
-            margin: 10px 0;
-            text-align: center;
-        }
-
-        button {
-            padding: 10px;
-            cursor: pointer;
-            border: none;
-            border-radius: 5px;
-            background-color: black;
-            color: white;
-        }
-
-        button:hover {
-            background-color: gray;
-        }
-
-        #extra-info {
-            display: none;
-            margin-top: 10px;
-            padding: 10px;
-            border: 1px solid gray;
-            border-radius: 5px;
-            background-color: lightgray;
-        }
-    </style>
+    <title>Perro</title>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+      </head>
 </head>
 <body>
-
-    <div class="container">
-        <div class="info">
-            <h2>Nombre: Perro doméstico</h2>
-            <p><strong>Nombre científico:</strong> Canis lupus familiaris</p>
-            <p><strong>Vida media:</strong> 10 a 13 años</p>
-            <p><strong>Tamaño:</strong> Varía según la raza</p>
-            <p><strong>Peso:</strong> Varía según la raza</p>
-        </div>
-        <div class="image">
-            <img src="img/hus.jpg" alt="Perro Husky">
-        </div>
+    <div class="contenedor2">
+        <div class="texto-alineado2">
+            <p class="text-start1">Nombre: </p>
+            <p class="text-start11">Perro </p>
+            <p class="text-start2">Nombre científico: </p>
+            <p class="text-start22">Canis lupus familiaris </p>
+            <p class="text-start3">Clase: </p>
+            <p class="text-start33">Mamífero </p>
+            <p class="text-start4">Vida media en libertad: </p>
+            <p class="text-start44">10 a 13 años </p>
+            <p class="text-start5">Tamaño: </p>
+            <p class="text-start55">Varían según la raza </p>
+            <p class="text-start6">Peso: </p>
+            <p class="text-start66">Varían según la raza </p>
+            </div>
     </div>
 
-    <div class="button-container">
-        <button id="toggle-theme">Cambiar Tema</button>
-        <button id="toggle-info">Haz clic para ver más información</button>
+
+<body style="background-color: white; color: black; text-align: center; font-family: Arial, sans-serif;">
+
+    <button id="toggle-theme">Cambiar Tema</button>
+    <p id="info" style="cursor: pointer; font-weight: bold;">Haz clic para ver más información.</p>
+    
+    <div id="extra-info" style="display: none; opacity: 0; transition: opacity 0.5s ease-in-out; font-size: 18px; margin-top: 10px;">
+        Los Husky no ladran, aúllann
+Esta variedad tuvo pocos cruces con otras razas, al estar aislada en una zona concreta durante siglos. Por este motivo, sus genes y los del lobo mantienen cierta cercanía. Esto no significa que sean agresivos, pues al desarrollarse junto al hombre se acostumbraron a la vida doméstica. Sin embargo, mantuvieron esta característica tan lobuna. De hecho, su aullido puede escucharse a 15 kilómetros de distancia.
     </div>
 
-    <div class="description">
-        <h3>Descripción:</h3>
-        <p>El perro doméstico, Canis lupus familiaris, es un mamífero carnívoro domesticado hace miles de años, descendiente del lobo gris. Se caracteriza por su gran diversidad de razas, tamaños y temperamentos, adaptándose a diversos roles como compañía, trabajo y asistencia. Son animales sociales, leales e inteligentes, con un agudo sentido del olfato y el oído. Su esperanza de vida varía según la raza y cuidados, oscilando entre 10 y 13 años en promedio.</p>
+    <img src="img/hus.jpg" class="img-thumbnal" 
+    alt="Perro Husky de Siberia, uno de los perros más hermosos del mundo" 
+    style="max-width: 100%; height: auto; margin-top: 20px; border-radius: 10px; float: right;">
+
+
+    <script src="script.js"></script> 
+
+
+    <p class="text-start7">Descripción: </p>
+    <p class="text-start">El perro doméstico, Canis lupus familiaris, es un mamífero carnívoro domesticado hace miles de años, descendiente del lobo gris. Se caracteriza por su gran diversidad de razas, tamaños y temperamentos, adaptándose a diversos roles como compañía, trabajo y asistencia. Son animales sociales, leales e inteligentes, con un agudo sentido del olfato y el oído. Su esperanza de vida varía según la raza y cuidados, oscilando entre 10 y 13 años en promedio. </p>
+    <div class="contenedor">
+            <img src="img/perrodefensa.jpg" class="rounded float-start" alt="">
+             <div class="texto-alineado"></div>
+                <p class="text-start10">Características principales del perro: </p>
+                <p class="text-start12">1. Diversidad de razas </p>
+                <p class="text-start13">2. Son omnívoros </p>
+                <p class="text-start14">3. Son animales sociales que forman fuertes vínculos con sus dueños y otros perros. </p>
+                <p class="text-start15">4. Sentidos agudos </p>
+                <p class="text-start16">5. Inteligencia y sociabilidad </p>
+                <p class="text-start17">6. Adaptabilidad </p>
+                <p class="text-start18">7. Se comunican a través de ladridos, gruñidos, gestos y lenguaje corporal </p>
+                <p class="text-start19">8. Conservan instintos de sus ancestros lobos, como el de caza y el de manada. </p>
+            </div>
     </div>
-
-    <div id="extra-info">
-        <h3>Características principales del perro:</h3>
-        <ul>
-            <li>Diversidad de razas</li>
-            <li>Son omnívoros</li>
-            <li>Animales sociales que forman fuertes vínculos</li>
-            <li>Sentidos agudos</li>
-            <li>Inteligencia y sociabilidad</li>
-            <li>Adaptabilidad</li>
-            <li>Se comunican a través de ladridos, gruñidos, gestos y lenguaje corporal</li>
-            <li>Conservan instintos de sus ancestros lobos</li>
-        </ul>
-    </div>
-
-    <script>
-        const toggleThemeBtn = document.getElementById("toggle-theme");
-        const toggleInfoBtn = document.getElementById("toggle-info");
-        const extraInfo = document.getElementById("extra-info");
-
-        toggleThemeBtn.addEventListener("click", () => {
-            if (document.body.style.backgroundColor === "black") {
-                document.body.style.backgroundColor = "white";
-                document.body.style.color = "black";
-            } else {
-                document.body.style.backgroundColor = "black";
-                document.body.style.color = "white";
-            }
-        });
-
-        toggleInfoBtn.addEventListener("click", () => {
-            extraInfo.style.display = (extraInfo.style.display === "none" || extraInfo.style.display === "") ? "block" : "none";
-        });
-    </script>
-
+    <p class="text-start8">Fuentes: </p>
+    <p class="text-body-secondary">
+        <a href="https://humanidades.com/perro/" class="text-reset">Ingresa al link</a>.
+      </p>
+    
 </body>
 </html>
