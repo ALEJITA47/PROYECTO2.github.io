@@ -1,16 +1,16 @@
 body {
 
     .contenedor {
-        display: flex; /* Habilita Flexbox */
-        align-items: center; /* Alinea verticalmente los elementos */
+        display: flex; 
+        align-items: center; 
       }
       .imagen-alineada {
-        max-width: 200px; /* Ajusta el tamaño de la imagen */
-        margin-right: 20px; /* Espacio entre la imagen y el texto */
+        max-width: 200px; 
+        margin-right: 20px; 
     }
     .texto-alineado {
-        display: flex; /* Habilita Flexbox para los elementos de texto */
-        flex-direction: column; /* Organiza los elementos de texto en columna */
+        display: flex; 
+        flex-direction: column; 
     }
     
     .text-start1 {
